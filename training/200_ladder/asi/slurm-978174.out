@@ -1,0 +1,73 @@
+2024/11/20 13:43:30 I - Loading dataset #1/1 from ../fitting_data_info.pckl.gzip
+2024/11/20 13:43:31 I - Number of structures: 2949
+2024/11/20 13:43:31 I - Total number of structures: 2949
+2024/11/20 13:43:31 I - Potential file: output_potential.yaml
+2024/11/20 13:43:31 I - Constructing atomic_env column, cutoffmax=6.0, elements_to_index_map={'H': 0, 'O': 1}
+2024/11/20 13:43:48 I - 	Element: H, # atoms: 194900, # B-func: 1555, # projections: 1555
+2024/11/20 13:43:48 I - 	Element: O, # atoms: 97538, # B-func: 1555, # projections: 1555
+2024/11/20 13:43:48 I - Required memory to store complete dataset projections: 3.4GiB
+2024/11/20 13:43:48 I - Required memory to store active set: 36.9MiB
+2024/11/20 13:43:48 I - Automatic batch_size determination
+2024/11/20 13:43:48 I - Memory limit: 721.0GiB
+2024/11/20 13:43:48 I - LINEAR matrix will be used for active set calculation
+2024/11/20 13:43:48 I - Single-run (no batch_size is provided)
+2024/11/20 13:43:48 I - Compute B-projections
+2024/11/20 13:46:35 I - B-projections computed:
+2024/11/20 13:46:35 I - 	Element: H, B-projections shape: (194900, 1555)
+2024/11/20 13:46:35 I - 	Element: O, B-projections shape: (97538, 1555)
+2024/11/20 13:46:35 I - Compute active set (using MaxVol algorithm)
+2024/11/20 13:52:44 I - Compute pseudoinversion of active set
+2024/11/20 13:52:47 I - Done
+2024/11/20 13:53:05 I - 	Element: H, Active set inv. shape: (1555, 1555), gamma_max: 1.002
+2024/11/20 13:53:05 I - 	Element: O, Active set inv. shape: (1555, 1555), gamma_max: 1.027
+2024/11/20 13:53:05 I - Saving Active Set Inversion (ASI) to output_potential.asi
+2024/11/20 13:53:05 I - Saving  done to output_potential.asi (36.9MiB)
+Species type: 0
+Iter 0/300: abs_max = 2.357 (tol = 1.010)
+Iter 10/300: abs_max = 1.571 (tol = 1.010)
+Iter 20/300: abs_max = 1.573 (tol = 1.010)
+Iter 30/300: abs_max = 1.552 (tol = 1.010)
+Iter 40/300: abs_max = 1.489 (tol = 1.010)
+Iter 50/300: abs_max = 1.277 (tol = 1.010)
+Iter 60/300: abs_max = 1.251 (tol = 1.010)
+Iter 70/300: abs_max = 1.311 (tol = 1.010)
+Iter 80/300: abs_max = 1.357 (tol = 1.010)
+Iter 90/300: abs_max = 1.547 (tol = 1.010)
+Iter 100/300: abs_max = 1.188 (tol = 1.010)
+Iter 110/300: abs_max = 1.217 (tol = 1.010)
+Iter 120/300: abs_max = 1.256 (tol = 1.010)
+Iter 130/300: abs_max = 1.149 (tol = 1.010)
+Iter 140/300: abs_max = 1.131 (tol = 1.010)
+Iter 150/300: abs_max = 1.127 (tol = 1.010)
+Iter 160/300: abs_max = 1.162 (tol = 1.010)
+Iter 170/300: abs_max = 1.077 (tol = 1.010)
+Iter 180/300: abs_max = 1.160 (tol = 1.010)
+Iter 190/300: abs_max = 1.135 (tol = 1.010)
+Iter 200/300: abs_max = 1.118 (tol = 1.010)
+Iter 210/300: abs_max = 1.128 (tol = 1.010)
+Iter 220/300: abs_max = 1.144 (tol = 1.010)
+Iter 230/300: abs_max = 1.104 (tol = 1.010)
+Species type: 1
+Iter 0/300: abs_max = 2.744 (tol = 1.010)
+Iter 10/300: abs_max = 1.678 (tol = 1.010)
+Iter 20/300: abs_max = 1.589 (tol = 1.010)
+Iter 30/300: abs_max = 1.590 (tol = 1.010)
+Iter 40/300: abs_max = 1.447 (tol = 1.010)
+Iter 50/300: abs_max = 1.347 (tol = 1.010)
+Iter 60/300: abs_max = 1.436 (tol = 1.010)
+Iter 70/300: abs_max = 1.264 (tol = 1.010)
+Iter 80/300: abs_max = 1.241 (tol = 1.010)
+Iter 90/300: abs_max = 1.327 (tol = 1.010)
+Iter 100/300: abs_max = 1.206 (tol = 1.010)
+Iter 110/300: abs_max = 1.152 (tol = 1.010)
+Iter 120/300: abs_max = 1.270 (tol = 1.010)
+Iter 130/300: abs_max = 1.222 (tol = 1.010)
+Iter 140/300: abs_max = 1.206 (tol = 1.010)
+Iter 150/300: abs_max = 1.270 (tol = 1.010)
+Iter 160/300: abs_max = 1.290 (tol = 1.010)
+Iter 170/300: abs_max = 1.115 (tol = 1.010)
+Iter 180/300: abs_max = 1.313 (tol = 1.010)
+Iter 190/300: abs_max = 1.056 (tol = 1.010)
+Iter 200/300: abs_max = 1.061 (tol = 1.010)
+Iter 210/300: abs_max = 1.063 (tol = 1.010)
+Iter 220/300: abs_max = 1.128 (tol = 1.010)

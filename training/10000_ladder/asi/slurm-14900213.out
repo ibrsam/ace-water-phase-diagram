@@ -1,0 +1,83 @@
+unload bsc/1.0 (PATH, MANPATH)
+load MINIFORGE/24.3.0-0 (PATH)
+load CUDA/12.2 (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH, CUDA_HOME, CUDA_VERSION, CUDA_INC, CUDA_INSTALL_PATH) 
+load CUDNN/8.8/cuda12 (LD_LIBRARY_PATH, LIBRARY_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH, CUDNN_LIB_DIR, CUDNN_LIBRARY, CUDNN_INCLUDE_DIR) 
+unload CUDA/12.2 (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH, CUDA_HOME, CUDA_VERSION, CUDA_INC, CUDA_INSTALL_PATH) 
+load CUDA/11.8 (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH, CUDA_HOME, CUDA_VERSION, CUDA_INC, CUDA_INSTALL_PATH) 
+
+The following have been reloaded with a version change:
+  1) cuda/12.2 => cuda/11.8
+
+/gpfs/apps/MN5/ACC/MINIFORGE/24.3.0-0/envs/ace/bin/pacemaker:8: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  import pkg_resources
+2025/01/31 14:50:10 I - Redirecting log into file log.txt
+2025/01/31 14:50:10 I - Start pacemaker
+2025/01/31 14:50:10 I - Hostname: as01r4b08
+2025/01/31 14:50:10 I - Username: cicn607503
+2025/01/31 14:50:10 I - pacemaker/pyace version: 0.2.7+172.gd1c213a
+2025/01/31 14:50:10 I - ace_evaluator   version: 2023.11.25
+2025/01/31 14:50:10 I - Loading input.yaml... 
+Traceback (most recent call last):
+  File "/gpfs/apps/MN5/ACC/MINIFORGE/24.3.0-0/envs/ace/bin/pacemaker", line 401, in <module>
+    main(sys.argv[1:])
+  File "/gpfs/apps/MN5/ACC/MINIFORGE/24.3.0-0/envs/ace/bin/pacemaker", line 156, in main
+    with open(input_yaml_filename) as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'input.yaml'
+2025/01/31 14:50:12 I - Loading dataset #1/1 from ../fitting_data_info.pckl.gzip
+2025/01/31 14:50:12 I - Number of structures: 2949
+2025/01/31 14:50:12 I - Total number of structures: 2949
+2025/01/31 14:50:12 I - Potential file: interim_potential_ladder_step_1.yaml
+2025/01/31 14:50:12 I - Constructing atomic_env column, cutoffmax=6.0, elements_to_index_map={'H': 0, 'O': 1}
+2025/01/31 14:50:27 I - 	Element: H, # atoms: 194900, # B-func: 687, # projections: 687
+2025/01/31 14:50:27 I - 	Element: O, # atoms: 97538, # B-func: 687, # projections: 687
+2025/01/31 14:50:27 I - Required memory to store complete dataset projections: 1.5GiB
+2025/01/31 14:50:27 I - Required memory to store active set: 7.2MiB
+2025/01/31 14:50:27 I - Automatic batch_size determination
+2025/01/31 14:50:27 I - Memory limit: 327.9GiB
+2025/01/31 14:50:27 I - LINEAR matrix will be used for active set calculation
+2025/01/31 14:50:27 I - Single-run (no batch_size is provided)
+2025/01/31 14:50:27 I - Compute B-projections
+2025/01/31 14:51:45 I - B-projections computed:
+2025/01/31 14:51:45 I - 	Element: H, B-projections shape: (194900, 687)
+2025/01/31 14:51:45 I - 	Element: O, B-projections shape: (97538, 687)
+2025/01/31 14:51:45 I - Compute active set (using MaxVol algorithm)
+2025/01/31 14:52:44 I - Compute pseudoinversion of active set
+2025/01/31 14:52:45 I - Done
+2025/01/31 14:52:46 I - 	Element: H, Active set inv. shape: (687, 687), gamma_max: 1.005
+2025/01/31 14:52:46 I - 	Element: O, Active set inv. shape: (687, 687), gamma_max: 1.034
+2025/01/31 14:52:46 I - Saving Active Set Inversion (ASI) to interim_potential_ladder_step_1.asi
+2025/01/31 14:52:46 I - Saving  done to interim_potential_ladder_step_1.asi (7.2MiB)
+Species type: 0
+Iter 0/300: abs_max = 2.260 (tol = 1.010)
+Iter 10/300: abs_max = 1.587 (tol = 1.010)
+Iter 20/300: abs_max = 1.506 (tol = 1.010)
+Iter 30/300: abs_max = 1.423 (tol = 1.010)
+Iter 40/300: abs_max = 1.502 (tol = 1.010)
+Iter 50/300: abs_max = 1.327 (tol = 1.010)
+Iter 60/300: abs_max = 1.283 (tol = 1.010)
+Iter 70/300: abs_max = 1.101 (tol = 1.010)
+Iter 80/300: abs_max = 1.140 (tol = 1.010)
+Iter 90/300: abs_max = 1.127 (tol = 1.010)
+Iter 100/300: abs_max = 1.164 (tol = 1.010)
+Iter 110/300: abs_max = 1.098 (tol = 1.010)
+Iter 120/300: abs_max = 1.181 (tol = 1.010)
+Iter 130/300: abs_max = 1.128 (tol = 1.010)
+Species type: 1
+Iter 0/300: abs_max = 2.306 (tol = 1.010)
+Iter 10/300: abs_max = 1.453 (tol = 1.010)
+Iter 20/300: abs_max = 1.362 (tol = 1.010)
+Iter 30/300: abs_max = 1.589 (tol = 1.010)
+Iter 40/300: abs_max = 1.413 (tol = 1.010)
+Iter 50/300: abs_max = 1.253 (tol = 1.010)
+Iter 60/300: abs_max = 1.188 (tol = 1.010)
+Iter 70/300: abs_max = 1.219 (tol = 1.010)
+Iter 80/300: abs_max = 1.127 (tol = 1.010)
+Iter 90/300: abs_max = 1.104 (tol = 1.010)
+Iter 100/300: abs_max = 1.129 (tol = 1.010)
+Iter 110/300: abs_max = 1.205 (tol = 1.010)
+Iter 120/300: abs_max = 1.063 (tol = 1.010)
+Iter 130/300: abs_max = 1.014 (tol = 1.010)

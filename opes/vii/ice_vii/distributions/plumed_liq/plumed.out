@@ -1,0 +1,65 @@
+n2login1:pid2011105.plumed: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+n2login1:pid2011105.plumed: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+n2login1:pid2011105.plumed: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+n2login1:pid2011105.plumed: Failed to modify UD QP to INIT on mlx5_0: Operation not permitted
+
+DRIVER: Found molfile format trajectory dcd with name out.dcd
+dcdplugin) detected standard 32-bit DCD file of native endianness
+dcdplugin) CHARMM format DCD file (also NAMD 2.1 and later)
+PLUMED: PLUMED is starting
+PLUMED: Version: 2.9.2 (git: Unknown) compiled on May 29 2025 at 09:31:09
+PLUMED: Please cite these papers when using PLUMED [1][2]
+PLUMED: For further information see the PLUMED web page at http://www.plumed.org
+PLUMED: Root: /opt/software/pc2/EB-SW/software/PLUMED/2.9.2-foss-2023b/lib/plumed
+PLUMED: For installed feature, see /opt/software/pc2/EB-SW/software/PLUMED/2.9.2-foss-2023b/lib/plumed/src/config/config.txt
+PLUMED: Molecular dynamics engine: driver
+PLUMED: Precision of reals: 8
+PLUMED: Running over 1 node
+PLUMED: Number of threads: 1
+PLUMED: Cache line size: 512
+PLUMED: Number of atoms: 864
+PLUMED: File suffix: 
+PLUMED: FILE: plumed.dat
+PLUMED: Action ENVIRONMENTSIMILARITY
+PLUMED:   with label s
+PLUMED:   Please read and cite [3]
+PLUMED:   targeting the BCC crystal structure with lattice constants 0.340727
+PLUMED:   maximum distance in the reference environment is 0.340727
+PLUMED:   representing local density as a sum of Gaussians with standard deviation 0.190000
+PLUMED:   keyword SPECIES takes atoms : 577 578 579 580 581 582 583 584 585 586 587 588 589 590 591 592 593 594 595 596 597 598 599 600 601 602 603 604 605 606 607 608 609 610 611 612 613 614 615 616 617 618 619 620 621 622 623 624 625 626 627 628 629 630 631 632 633 634 635 636 637 638 639 640 641 642 643 644 645 646 647 648 649 650 651 652 653 654 655 656 657 658 659 660 661 662 663 664 665 666 667 668 669 670 671 672 673 674 675 676 677 678 679 680 681 682 683 684 685 686 687 688 689 690 691 692 693 694 695 696 697 698 699 700 701 702 703 704 705 706 707 708 709 710 711 712 713 714 715 716 717 718 719 720 721 722 723 724 725 726 727 728 729 730 731 732 733 734 735 736 737 738 739 740 741 742 743 744 745 746 747 748 749 750 751 752 753 754 755 756 757 758 759 760 761 762 763 764 765 766 767 768 769 770 771 772 773 774 775 776 777 778 779 780 781 782 783 784 785 786 787 788 789 790 791 792 793 794 795 796 797 798 799 800 801 802 803 804 805 806 807 808 809 810 811 812 813 814 815 816 817 818 819 820 821 822 823 824 825 826 827 828 829 830 831 832 833 834 835 836 837 838 839 840 841 842 843 844 845 846 847 848 849 850 851 852 853 854 855 856 857 858 859 860 861 862 863 864 
+PLUMED:   added component to this action:  s.mean 
+PLUMED:   value s.mean is obtained by taking the 1th component and finding the mean value
+PLUMED: Action HISTOGRAM
+PLUMED:   with label hh
+PLUMED:   with stride 1
+PLUMED:   weights are all equal to one
+PLUMED:   for all base quantities calculated by s 
+PLUMED:   grid of 2001 equally spaced points between (-0.5) and (7)
+PLUMED: Action DUMPGRID
+PLUMED:   with label @2
+PLUMED:   with stride 0
+PLUMED:   outputting grid calculated by action hh to file named histo with format %f 
+PLUMED:   outputting data for replicas 0 Action PRINT
+PLUMED:   with label @3
+PLUMED:   with stride 1
+PLUMED:   with arguments s.mean
+PLUMED:   on file COLVAR
+PLUMED:   with format  %f
+PLUMED: END FILE: plumed.dat
+PLUMED: Timestep: 1.000000
+PLUMED: KbT has not been set by the MD engine
+PLUMED: It should be set by hand where needed
+PLUMED: Relevant bibliography:
+PLUMED:   [1] The PLUMED consortium, Nat. Methods 16, 670 (2019)
+PLUMED:   [2] Tribello, Bonomi, Branduardi, Camilloni, and Bussi, Comput. Phys. Commun. 185, 604 (2014)
+PLUMED:   [3] Piaggi and Parrinello, J. Chem. Phys. 150 (24), 244119 (2019)
+PLUMED: Please read and cite where appropriate!
+PLUMED: Finished setup
+PLUMED:                                               Cycles        Total      Average      Minimum      Maximum
+PLUMED:                                                    1     9.084621     9.084621     9.084621     9.084621
+PLUMED: 1 Prepare dependencies                           400     0.000189     0.000000     0.000000     0.000002
+PLUMED: 2 Sharing data                                   400     0.000970     0.000002     0.000002     0.000027
+PLUMED: 3 Waiting for data                               400     0.000099     0.000000     0.000000     0.000001
+PLUMED: 4 Calculating (forward loop)                     400     8.971416     0.022429     0.021523     0.025994
+PLUMED: 5 Applying (backward loop)                       400     0.000728     0.000002     0.000002     0.000019
+PLUMED: 6 Update                                         400     0.074918     0.000187     0.000170     0.000663

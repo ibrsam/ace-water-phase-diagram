@@ -25,4 +25,4 @@ A snapshot of this repository, together with the training data and final ACE pot
 
 ## Citation
 If you use this work, please cite:
-E. Ibrahim *et al.*, *J. Chem. Theory Comput.* (2026)
+Ibrahim,  E.;  Lysogorskiy,  Y.;  Drautz,  R.Efficient    parametrization    of    transfer-able   atomic   cluster   expansion   for   wa-ter.JournalofChemicalTheoryandComputation2024,20,    11049–11057,DOI:10.1021/acs.jctc.4c00802.

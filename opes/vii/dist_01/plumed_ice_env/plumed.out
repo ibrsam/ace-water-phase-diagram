@@ -1,0 +1,64 @@
+
+DRIVER: Found molfile format trajectory dcd with name out.dcd
+dcdplugin) detected standard 32-bit DCD file of native endianness
+dcdplugin) CHARMM format DCD file (also NAMD 2.1 and later)
+PLUMED: PLUMED is starting
+PLUMED: Version: 2.8.0 (git: Unknown) compiled on Feb  7 2023 at 10:13:44
+PLUMED: Please cite these papers when using PLUMED [1][2]
+PLUMED: For further information see the PLUMED web page at http://www.plumed.org
+PLUMED: Root: /opt/software/pc2/EB-SW/software/PLUMED/2.8.0-foss-2021b/lib/plumed
+PLUMED: For installed feature, see /opt/software/pc2/EB-SW/software/PLUMED/2.8.0-foss-2021b/lib/plumed/src/config/config.txt
+PLUMED: Molecular dynamics engine: driver
+PLUMED: Precision of reals: 8
+PLUMED: Running over 1 node
+PLUMED: Number of threads: 1
+PLUMED: Cache line size: 512
+PLUMED: Number of atoms: 864
+PLUMED: File suffix: 
+PLUMED: FILE: plumed.dat
+PLUMED: Action ENVIRONMENTSIMILARITY
+PLUMED:   with label s
+PLUMED:   Please read and cite [3]
+PLUMED:   reading 14 reference vectors from env.pdb 
+PLUMED:   Number of reference environments is 1
+PLUMED:   Number of vectors per reference environment is 14
+PLUMED:   targeting the CUSTOM crystal structure
+PLUMED:   maximum distance in the reference environment is 0.341072
+PLUMED:   representing local density as a sum of Gaussians with standard deviation 0.120000
+PLUMED:   keyword SPECIES takes atoms : 257 258 259 260 261 262 263 264 265 266 267 268 269 270 271 272 273 274 275 276 277 278 279 280 281 282 283 284 285 286 287 288 289 290 291 292 293 294 295 296 297 298 299 300 301 302 303 304 305 306 307 308 309 310 311 312 313 314 315 316 317 318 319 320 321 322 323 324 325 326 327 328 329 330 331 332 333 334 335 336 337 338 339 340 341 342 343 344 345 346 347 348 349 350 351 352 353 354 355 356 357 358 359 360 361 362 363 364 365 366 367 368 369 370 371 372 373 374 375 376 377 378 379 380 381 382 383 384 
+PLUMED:   added component to this action:  s.mean 
+PLUMED:   value s.mean is obtained by taking the 1th component and finding the mean value
+PLUMED: Action HISTOGRAM
+PLUMED:   with label hh
+PLUMED:   with stride 1
+PLUMED:   weights are all equal to one
+PLUMED:   for all base quantities calculated by s 
+PLUMED:   grid of 1001 equally spaced points between (-0.5) and (3.5)
+PLUMED: Action DUMPGRID
+PLUMED:   with label @2
+PLUMED:   with stride 0
+PLUMED:   outputting grid calculated by action hh to file named histo with format %f 
+PLUMED:   outputting data for replicas 0 Action PRINT
+PLUMED:   with label @3
+PLUMED:   with stride 1
+PLUMED:   with arguments s.mean
+PLUMED:   on file COLVAR
+PLUMED:   with format  %f
+PLUMED: END FILE: plumed.dat
+PLUMED: Timestep: 1.000000
+PLUMED: KbT has not been set by the MD engine
+PLUMED: It should be set by hand where needed
+PLUMED: Relevant bibliography:
+PLUMED:   [1] The PLUMED consortium, Nat. Methods 16, 670 (2019)
+PLUMED:   [2] Tribello, Bonomi, Branduardi, Camilloni, and Bussi, Comput. Phys. Commun. 185, 604 (2014)
+PLUMED:   [3] Piaggi and Parrinello, J. Chem. Phys. 150 (24), 244119 (2019)
+PLUMED: Please read and cite where appropriate!
+PLUMED: Finished setup
+PLUMED:                                               Cycles        Total      Average      Minimum      Maximum
+PLUMED:                                                    1     1.162800     1.162800     1.162800     1.162800
+PLUMED: 1 Prepare dependencies                           400     0.000178     0.000000     0.000000     0.000002
+PLUMED: 2 Sharing data                                   400     0.001092     0.000003     0.000002     0.000092
+PLUMED: 3 Waiting for data                               400     0.000127     0.000000     0.000000     0.000002
+PLUMED: 4 Calculating (forward loop)                     400     1.021450     0.002554     0.002306     0.003798
+PLUMED: 5 Applying (backward loop)                       400     0.001119     0.000003     0.000003     0.000007
+PLUMED: 6 Update                                         400     0.101838     0.000255     0.000245     0.000538

@@ -1,0 +1,70 @@
+
+units		metal						## E in [eV], t in [ps], P in [10000 Pa], l in [A]
+atom_style	atomic						## mass x y z vx vy vz 
+
+neighbor	0.5 bin						## neighbor list, skin = 0.5 Angstrom
+neigh_modify	every 2 delay 10 check yes			## update of neighbor list
+
+############################## main variables
+variable        seed equal 19182
+
+variable	temperature equal 450
+variable	tempDamp equal 0.1
+
+variable        pressure equal 30000
+variable        pressureDamp equal 1.0 				# This is 1 ps
+
+##############################
+
+read_data water.dat
+
+mass		1 1.008    # H
+mass		2 15.9994  # O
+
+
+pair_style	pace/extrapolation
+pair_coeff	* * /pc2/users/a/acepdw01/work/phase_diagram/pot_dir/interim_potential_ladder_step_1.yaml /pc2/users/a/acepdw01/work/phase_diagram/pot_dir/interim_potential_ladder_step_1.asi H O
+
+fix pace_gamma all pair 1000 pace/extrapolation gamma 1
+compute max_pace_gamma all reduce max f_pace_gamma
+variable dump_skip equal "c_max_pace_gamma < 10"
+
+dump pace_dump all custom 1000 extrapolative_structures.dump id type x y z f_pace_gamma
+dump_modify pace_dump skip v_dump_skip
+dump_modify pace_dump element H O
+
+variable max_pace_gamma equal c_max_pace_gamma
+
+timestep	0.0005						## timestep = 0.0005*ps = 0.5 fs
+
+thermo		100
+thermo_style custom step etotal pe ke press temp vol density c_max_pace_gamma
+
+
+min_style cg
+minimize 0.0 5.0e-4 10000 100000
+
+################## equilibration of main calculation
+
+fix             3 all nph aniso ${pressure} ${pressure} ${pressureDamp}
+fix             4 all temp/csvr ${temperature} ${temperature} ${tempDamp} ${seed}
+velocity 	all create ${temperature} ${seed} dist gaussian
+
+run 20000 
+
+unfix 3
+unfix 4
+
+################## main calculation
+
+dump 		3 all custom 1000 traj.lammpstrj id type element x y z
+dump_modify     3 element H O
+
+fix             3 all nph aniso ${pressure} ${pressure} ${pressureDamp}
+fix             4 all temp/csvr ${temperature} ${temperature} ${tempDamp} ${seed}
+velocity 	all create ${temperature} ${seed} dist gaussian
+
+run             2000000
+
+unfix		3
+unfix		4

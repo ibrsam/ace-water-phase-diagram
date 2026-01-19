@@ -1,0 +1,28 @@
+cpu-bind=MASK - n2gpu1211, task  0  0 [12374]: mask |BBBBBBBB|BBBBBBBB||BBBBBBBB|BBBBBBBB||BBBBBBBB|BBBBBBBB||BBBBBBBB|BBBBBBBB||||BBBBBBBB|BBBBBBBB||BBBBBBBB|BBBBBBBB||BBBBBBBB|BBBBBBBB||BBBBBBBB|BBBBBBBB|  set
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) pc2fs   2) slurm/24.11.5-1   3) DefaultModules
+cpu-bind=MASK - n2gpu1211, task  0  0 [12505]: mask |BBBBBBBB|BBBBBBBB||BBBBBBBB|BBBBBBBB||BBBBBBBB|BBBBBBBB||BBBBBBBB|BBBBBBBB||||BBBBBBBB|BBBBBBBB||BBBBBBBB|BBBBBBBB||BBBBBBBB|BBBBBBBB||BBBBBBBB|BBBBBBBB|  set
+[n2gpu1211:12505] MCW rank 0 is not bound (or bound to all available processors)
+[n2gpu1211:12505] MCW rank 0 is not bound (or bound to all available processors)
+Kokkos::OpenMP::initialize WARNING: OMP_PROC_BIND environment variable not set
+  In general, for best performance with OpenMP 4.0 or better set OMP_PROC_BIND=spread and OMP_PLACES=threads
+  For best performance with OpenMP 3.1 set OMP_PROC_BIND=true
+  For unit testing set OMP_PROC_BIND=false
+
+MPI detected: For OpenMP binding to work as intended, MPI ranks must be bound to exclusive CPU sets.
+
+Exception: cudaSetDevice(cuda_device_id) error( cudaErrorDevicesUnavailable): CUDA-capable device(s) is/are busy or unavailable /dev/shm/xinwu/LAMMPS/27Jun2024/foss-2023b-kokkos-CUDA-12.5.0/lammps-patch_27Jun2024/lib/kokkos/core/src/Cuda/Kokkos_Cuda_Instance.cpp:544
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 25393755.0 ON n2gpu1211 CANCELLED AT 2025-08-08T18:08:24 ***
+srun: error: n2gpu1211: task 0: Exited with exit code 1
+srun: Terminating StepId=25393755.0

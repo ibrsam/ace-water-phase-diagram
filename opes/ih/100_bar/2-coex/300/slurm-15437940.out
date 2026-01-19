@@ -1,0 +1,33 @@
+unload bsc/1.0 (PATH, MANPATH)
+load mkl/2024.2 (LD_LIBRARY_PATH)
+Set INTEL compilers as MPI wrappers backend
+load CUDA/12.2 (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH, CUDA_HOME, CUDA_VERSION, CUDA_INC, CUDA_INSTALL_PATH) 
+load openmpi/4.1.5-gcc (LD_LIBRARY_PATH)
+load FFTW/3.3.10 (LD_LIBRARY_PATH, LIBRARY_PATH, CPATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH, PKG_CONFIG_PATH, FFTW_ROOT, FFTW_HOME) 
+load GSL/2.8 (LD_LIBRARY_PATH, PKG_CONFIG_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH, MANPATH) 
+load LAMMPS/7Feb2024 (PATH, LD_LIBRARY_PATH, LIBRARY_PATH)
+Kokkos::OpenMP::initialize WARNING: OMP_PROC_BIND environment variable not set
+  In general, for best performance with OpenMP 4.0 or better set OMP_PROC_BIND=spread and OMP_PLACES=threads
+  For best performance with OpenMP 3.1 set OMP_PROC_BIND=true
+  For unit testing set OMP_PROC_BIND=false
+
+MPI detected: For OpenMP binding to work as intended, MPI ranks must be bound to exclusive CPU sets.
+
+Kokkos::OpenMP::initialize WARNING: OMP_PROC_BIND environment variable not set
+  In general, for best performance with OpenMP 4.0 or better set OMP_PROC_BIND=spread and OMP_PLACES=threads
+  For best performance with OpenMP 3.1 set OMP_PROC_BIND=true
+  For unit testing set OMP_PROC_BIND=false
+
+MPI detected: For OpenMP binding to work as intended, MPI ranks must be bound to exclusive CPU sets.
+
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/apps/ACC/LAMMPS/SRC/lammps-7Feb2024/lib/plumed/plumed-2.8.4/build/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/apps/ACC/LAMMPS/SRC/lammps-7Feb2024/lib/plumed/plumed-2.8.4/build/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/apps/ACC/LAMMPS/SRC/lammps-7Feb2024/lib/plumed/plumed-2.8.4/build/lib/libplumedKernel.so" +++
++++ Loading the PLUMED kernel runtime +++
++++ PLUMED_KERNEL="/apps/ACC/LAMMPS/SRC/lammps-7Feb2024/lib/plumed/plumed-2.8.4/build/lib/libplumedKernel.so" +++

@@ -21,8 +21,14 @@ A snapshot of this repository, together with the training data and final ACE pot
 - LAMMPS with ACE support
 - PLUMED (with OPES)
 - PACEmaker
-- Python 3.x (NumPy, SciPy, Matplotlib)
+- Python 3.x (NumPy, Pandas, SciPy, Matplotlib)
 
 ## Citation
 If you use this work, please cite:
-Ibrahim,  E.;  Lysogorskiy,  Y.;  Drautz,  R.Efficient    parametrization    of    transfer-able   atomic   cluster   expansion   for   wa-ter.JournalofChemicalTheoryandComputation2024,20,    11049–11057,DOI:10.1021/acs.jctc.4c00802.
+
+Ibrahim, E.; Lysogorskiy,  Y.; Drautz, R. 
+Efficient parametrization of transferable atomic cluster expansion for water.
+Journal of Chemical Theory and Computation 2024,20,
+11049–11057,DOI:10.1021/acs.jctc.4c00802.
+
+Ibrahim, E.; Lysogorskiy, Y.; Drautz, R.; Piaggi, P. M. Water Phase Diagram from a General-Purpose Atomic Cluster Expansion Potential. arXiv 2026, arXiv:2601.xxxxx.

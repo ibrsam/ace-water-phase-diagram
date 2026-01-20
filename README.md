@@ -30,5 +30,3 @@ Ibrahim, E.; Lysogorskiy,  Y.; Drautz, R.
 Efficient parametrization of transferable atomic cluster expansion for water.
 Journal of Chemical Theory and Computation 2024,20,
 11049–11057,DOI:10.1021/acs.jctc.4c00802.
-
-Ibrahim, E.; Lysogorskiy, Y.; Drautz, R.; Piaggi, P. M. Water Phase Diagram from a General-Purpose Atomic Cluster Expansion Potential. arXiv 2026, arXiv:2601.xxxxx.

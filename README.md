@@ -35,9 +35,15 @@ The dataset is archived on Zenodo and can be accessed via the following DOI:
 - Python 3.x (NumPy, Pandas, SciPy, Matplotlib)
 
 ## Citation
-If you use this work, please cite:
 
-Ibrahim, E.; Lysogorskiy,  Y.; Drautz, R. 
-Efficient parametrization of transferable atomic cluster expansion for water.
-Journal of Chemical Theory and Computation 2024,20,
-11049–11057,DOI:10.1021/acs.jctc.4c00802.
+If you use this work, please cite the following publications:
+
+Ibrahim, E.; Lysogorskiy, Y.; Drautz, R.  
+Efficient parametrization of transferable Atomic Cluster Expansion for water.  
+*Journal of Chemical Theory and Computation* **2024**, *20*, 11049–11057.  
+DOI: 10.1021/acs.jctc.4c00802
+
+Ibrahim, E.; Lysogorskiy, Y.; Drautz, R.; Piaggi, P.  
+*Water Phase Diagram from a General-Purpose Atomic Cluster Expansion Potential*.  
+arXiv:2601.12947 (2026).  
+https://arxiv.org/abs/2601.12947
